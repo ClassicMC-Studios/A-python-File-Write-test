@@ -4,5 +4,6 @@ if file_exists('fileSave.txt'):
     f = open("fileSave.txt", "a")
 else:
     f = open("fileSave.txt", "x")
-f.write("This will write as a save\n")
+inpt = input("Write anything for the file\n")
+f.write(inpt+"\n")
 print("Send = 0 Success!")
